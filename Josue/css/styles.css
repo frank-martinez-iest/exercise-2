@@ -21,7 +21,10 @@ p {
 }
 hr {
   margin: 0;
-  color: #e6e7e8;
+  margin: 0;
+  background: #e6e7e8;
+  height: 1px;
+  border: none;
 }
 /*UTILS*/
 .btn {
@@ -36,9 +39,11 @@ hr {
 }
 .section-container {
   width: 100%;
+  box-sizing: border-box;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 32px;
 }
 .icon {
   color: #949492;
@@ -93,14 +98,19 @@ hr {
 .dishes-cards {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 .card {
+  transition: all 400ms ease-in;
   overflow: hidden;
   margin: 0;
   border-radius: 8px;
   position: relative;
   height: auto;
+  border: 1px solid #e6e7e8;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .coffe-card {
   background: url(../images/coffe.jpg);
@@ -109,7 +119,7 @@ hr {
   background-position: center center;
 }
 .card__image {
-  height: 187px;
+  height: 192px;
 }
 .card__description {
   padding: 24px;
@@ -119,10 +129,16 @@ hr {
   align-items: center;
   padding: 16px 24px;
 }
-.first {
-  content: none;
-  flex: 1;
-  display: block;
+.card__carousel-images {
+  height: 100px;
+  display: flex;
+  padding-left: 24px;
+}
+.card__carousel-image {
+  height: 100%;
+  width: 100px;
+  border-radius: 8px;
+  margin-right: 8px;
 }
 .card__buttons > span,
 i {
