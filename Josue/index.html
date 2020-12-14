@@ -35,6 +35,7 @@
   </head>
 
   <body>
+    <!--NAVBAR-->
     <nav class="navbar">
       <ul class="navbar__items">
         <li class="navbar__logo">
@@ -58,7 +59,7 @@
       <i class="far fa-user"></i>
       <i class="fas fa-shopping-cart"></i>
     </nav>
-    <hr />
+    <!--HERO SECTION-->
     <header class="hero">
       <div class="hero__image">
         <img src="./images/herosoup.jpg" alt="Delicious soup" />
@@ -76,9 +77,12 @@
       </div>
     </header>
     <main>
+      <!--DISH OF THE DAY SECTION-->
       <section class="section-container">
         <h2>Dish of the day</h2>
-        <ul class="dishes-cards">
+        <!--GRID CARDS WRAPPER-->
+        <ul class="cards-wrapper">
+          <!--CARD TYPE 1 : IMG, TEXT, BUTTONS-->
           <li class="card">
             <img
               class="card__image"
@@ -93,13 +97,14 @@
                 whopper patty, Add Tender crisp patty and more.
               </p>
             </div>
-            <hr />
+
             <div class="card__buttons">
-              <i class="icon first far fa-bookmark"></i>
+              <i class="icon icon--first far fa-bookmark"></i>
               <i class="icon far fa-heart"></i><span>105</span>
               <i class="icon far fa-comment"></i><span>10</span>
             </div>
           </li>
+          <!--CARD TYPE 1 : IMG, TEXT, BUTTONS-->
           <li class="card">
             <img
               class="card__image"
@@ -114,14 +119,16 @@
                 whopper patty, Add Tender crisp patty and more.
               </p>
             </div>
-            <hr />
+
             <div class="card__buttons">
-              <i class="icon first far fa-bookmark"></i>
+              <i class="icon icon--first far fa-bookmark"></i>
               <i class="icon far fa-heart"></i><span>105</span>
               <i class="icon far fa-comment"></i><span>10</span>
             </div>
           </li>
-          <li class="card coffe-card"></li>
+          <!--CARD TYPE 2 : PLACEHOLDER IMAGE-->
+          <li class="card placeholder-card"></li>
+          <!--CARD TYPE 3 : TEXT, CAROUSEL IMAGES, BUTTONS-->
           <li class="card">
             <div class="card__description">
               <h3>Featured meal</h3>
@@ -148,14 +155,17 @@
                 alt="Featured meal illustration"
               />
             </div>
+
             <div class="card__buttons">
-              <i class="icon first far fa-bookmark"></i>
+              <i class="icon icon--first far fa-bookmark"></i>
               <i class="icon far fa-heart"></i><span>105</span>
               <i class="icon far fa-comment"></i><span>10</span>
             </div>
           </li>
         </ul>
       </section>
+      <!-- REPEATED CARDS DIFFERENT PATTERN -->
+      <!-- TODO: Add more cards-->
       <section class="section-container">
         <h2>How it works</h2>
         <div>
