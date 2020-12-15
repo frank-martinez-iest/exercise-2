@@ -21,6 +21,9 @@
 .top-nav__social-icons {
   flex: 1;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }
 .top-nav__social-icons i {
   padding: 0 8px;
