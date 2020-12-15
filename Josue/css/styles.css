@@ -26,6 +26,9 @@ hr {
   height: 1px;
   border: none;
 }
+strong {
+  color: black;
+}
 /*UTILS*/
 .btn {
   border: none;
@@ -42,7 +45,7 @@ hr {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 80px;
+  padding: 80px;
 }
 .icon {
   color: #949492;
@@ -86,7 +89,7 @@ hr {
 .cards-wrapper {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .card {
   display: flex;
@@ -98,6 +101,7 @@ hr {
   position: relative;
   height: auto;
   border: 1px solid #e6e7e8;
+  background-color: white;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -138,4 +142,26 @@ i {
 }
 .icon--first {
   flex: 1;
+}
+/* HOW IT WORKS SECTION*/
+.info-section {
+  background-color: #f0f1f0;
+}
+.info-section img {
+  width: 100px;
+}
+.info-card {
+  text-align: center;
+  align-items: center;
+  padding: 32px;
+  border: none;
+}
+.info-card__hr {
+  width: 50px;
+  height: 4px;
+  border-radius: 4px;
+  background: #57a772;
+}
+.info-card__description {
+  font-size: 12px;
 }
