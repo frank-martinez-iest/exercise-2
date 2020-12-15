@@ -40,10 +40,9 @@ hr {
 .section-container {
   width: 100%;
   box-sizing: border-box;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 32px;
+  padding: 0 80px;
 }
 .icon {
   color: #949492;
@@ -53,10 +52,11 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 80px;
+  border-bottom: 1px solid #e6e7e8;
+  box-shadow: 1px 2px 12px 0 #e6e7e8;
 }
 .navbar__logo {
   flex: 1;
@@ -74,24 +74,12 @@ hr {
   height: 100%;
 }
 /*HERO SECTION*/
-
 .hero {
-  height: calc(100vh - 20px);
-  position: relative;
-}
-.hero__image {
-  position: absolute;
-  width: 60%;
-  height: calc(100vh - 20px);
-  left: 40%;
-}
-.hero__description-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .hero__description {
+  padding-left: 80px;
   max-width: 420px;
 }
 /*DISHES SECTION*/
