@@ -38,8 +38,14 @@
   <body>
     <!--SIDEBAR-->
     <aside class="sidebar sidebar--closed">
-      <i onClick="closeSidebar()" class="fas fa-times sidebar__close-btn"></i>
-      <ul class="sidebar__items">
+      <i
+        arialabel=""
+        onClick="closeSidebar()"
+        class="fas fa-times sidebar__close-btn"
+        role="button"
+        aria-label="close menu"
+      ></i>
+      <ul class="sidebar__items" aria-label="nav links">
         <li>
           <a onClick="closeSidebar()" href="#" class="sidebar__item">Foods</a>
         </li>
@@ -88,10 +94,16 @@
         <li class="navbar__link"><a href="#">Contact</a></li>
       </ul>
       <!--EXTRA BUTTONS (IN THIS CASE ICON BUT SHOULD ACT LIKE BTNS)-->
-      <i onClick="openSideBar()" class="menu-icon fas fa-bars"></i>
-      <i class="fas fa-search"></i>
-      <i class="far fa-user"></i>
-      <i class="fas fa-shopping-cart"></i>
+      <i
+        onClick="openSideBar()"
+        class="fas fa-bars menu-icon"
+        role="button"
+        aria-label="sidebar menu"
+        aria-pressed="false"
+      ></i>
+      <i class="fas fa-search icon" role="button" aria-label="search"></i>
+      <i class="far fa-user icon" role="button" aria-label="user"></i>
+      <i class="fas fa-shopping-cart icon" role="button" aria-label="shop"></i>
     </nav>
     <!--HERO SECTION-->
     <header class="hero">
@@ -106,14 +118,17 @@
         </p>
         <button class="btn animate-pop-in">Explore All</button>
       </div>
-      <div class="hero__image">
-        <img src="./images/herosoup.jpg" alt="Delicious soup" />
-      </div>
+      <figure class="hero__image">
+        <img
+          src="./images/herosoup.jpg"
+          alt="Delicious soup with noodles, chicken, carrot, broccoli, and lettuce"
+        />
+      </figure>
     </header>
     <main>
       <!--DISH OF THE DAY SECTION-->
-      <section class="section-container">
-        <h2>Dish of the day</h2>
+      <section class="section-container" aria-labelledby="dishes">
+        <h2 id="dishes">Dish of the day</h2>
         <!--GRID CARDS WRAPPER-->
         <ul class="cards-wrapper">
           <!--CARD TYPE 1 : IMG, TEXT, BUTTONS-->
@@ -341,7 +356,7 @@
           </p>
           <button class="btn">Download on the App Store</button>
         </div>
-        <img src="./images/iphone.png" alt="iphone mockup" />
+        <img src="./images/iphone.png" alt="iphone mockup with mifood app" />
       </section>
 
       <!-- COUPON SECTION -->
@@ -355,17 +370,24 @@
             odit
           </p>
           <form class="coupon-section__form" action="POST">
+            <!-- LABEL OUGHT TO BE INCLUDED BUT DESIGNER DIDN'T CARE ABOUT ACCESSIBILITY-->
             <input
               class="form-input"
-              placeholder="Your Email"
               type="email"
+              id="email"
               name="email"
+              placeholder="Your Email"
+              required
+              aria-required="true"
             />
             <input
               class="form-input"
-              placeholder="Your Name"
               type="text"
-              name="user"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+              aria-required="true"
             />
             <button class="btn btn--black" type="submit">Subscribe Now</button>
           </form>
@@ -382,7 +404,7 @@
           muted
           loop
         >
-          MIFOOD video
+          MIFOOD orange beverage
         </video>
       </section>
       <hr />

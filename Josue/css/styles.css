@@ -70,6 +70,7 @@ footer {
 }
 .icon {
   color: #949492;
+  cursor: pointer;
 }
 .wh {
   color: white;
@@ -164,6 +165,9 @@ footer {
 .hero__description {
   padding-left: 80px;
   max-width: 420px;
+}
+.hero__image {
+  margin: 0;
 }
 /*SOME ANIMATIONS FOR UX*/
 .hero__description h1 {
