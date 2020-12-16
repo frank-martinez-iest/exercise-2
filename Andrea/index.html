@@ -1,29 +1,195 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="Exercise 2 of the RoctStarts Engineers Course by Francisco Martinez for learning Web Development."> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercise 2 of the RoctStarts Engineers Course by Francisco Martinez for learning Web Development."> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta property="og:title" content="Exercise 2 - RockStars Engineers">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.ico">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
 
-  <meta property="og:title" content="Exercise 2 - RockStars Engineers">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="favicon.ico">
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="logotype.ico">
 
-  <meta name="theme-color" content="#fafafa">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script src="javascript.js" charset="utf-8"></script>
+    
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-</body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li>
+                    <a href="index.html"><img class="logotype" src="img/logotype.png" alt="logotype"></a>
+                </li>
+                <li class="navbar-title">
+                    <a class="navbar-anchor" href="https://www.openprocessing.org/">OpenProcessing</a>
+                </li>
+                            
+                <li class="navbar-search">
+                    <input type="text" placeholder="Search">
+                </li>
+                <li>
+                    <a href="">Discover</a>
+                </li>
+                <li>
+                    <a href="">Learn</a>
+                </li>
+                <li>
+                    <a href="">Teach</a>
+                </li>
+                <li>
+                    <img class="navbar-img" id="user-btn" onclick="myFunction()" src="img/user.png" alt="user log in">
+                    <div class="navbar-user" id="user-login">
+                        <button class="user-btn" type="submit" onclick="location.href='form.html';" >Join openProcessing</button>
+                        <hr>
+                        <p>Already have an account?</p>
+                        <a class="user-sign" href="">Sign in</a>
+                        <div class="user-bottom">
+                            <a href=""><i class="far fa-question-circle"></i>FAQ</a>
+                            <a href=""><i class="far fa-envelope"></i>Contact</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="navbar-btn">
+                    <button type="submit">Create a Sketch</button>
+                </li>
+    
+            </ul>
+        </nav>
 
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Coding is <span class="indent">beautiful</span></h1>
+                <p class="hero-description">Join the community of creative coders, educators, and designers that explore, experiment, and play.</p>
+                <button type="submit" class="hero-btn btn-outline">join</button>
+                <button class="hero-btn">Sign in</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="features">
+            <!-- SHOW THIS-->
+            <div class="features-articles">
+                <img class="features-img" src="img/connect-img.png" alt="different processing artworks">
+                <h2 class="features-title">Connect and inspire</h2>
+                <p class="description">Join 100,000 creative coders and follow their work. Add your ideas with forks, and find your inspiration for your next coding challenge.</p>
+                <a class="features-link" href="">Explore sketches</a>
+            </div>
+            <div class="features-articles">
+                <img class="features-img" src="img/coding-img.png" alt="code in processing environment">
+                <h2 class="features-title">No hassle coding</h2>
+                <p class="description">Code away your ideas in seconds with intuitive editor and p5js, enable common libraries with ease, and share your work with the community.</p>
+                <a class="features-link" href="">Create a sketch</a>
+            </div>
+            <div class="features-articles">
+                <img class="features-img" src="img/teach-img.png" alt="creative coding studio page image">
+                <h2 class="features-title" >Teach and learn</h2>
+                <p class="description">Teachers exclusive: Invite your students to study coding, give assignments and collect student work on your class page.</p>
+                <a class="features-link" href="">Learn more</a>
+            </div>
+            <!-- Should I use a div here? -->
+        </section>
+        
+        <section class="sketches">
+            <h2 class="sketches-title">Sketches that are <span><img class="heart-img" src="img/heart-arrow.png" alt="heart with arrow"> this week</span></h2>
+            <div class="sketches-gallery">
+                <iframe class="sketches-artwork" src="https://www.openprocessing.org/sketch/748916/embed/" width="400" height="300"></iframe>
+                <iframe class="sketches-artwork" src="https://www.openprocessing.org/sketch/945135/embed/" width="400" height="300"></iframe>                
+                <iframe class="sketches-artwork" src="https://www.openprocessing.org/sketch/1004867/embed/" width="400" height="300"></iframe>            
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navbar-footer">
+            <div>
+                <h3 class="footer-title">Created with love in NYC</h3>
+                <ul class="footer-links">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="">Contact us</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i>Follow @openprocessing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Creative Coding</h3>
+                <ul class="footer-links">
+                    <li>
+                        <a href="">Learn with Tutorials</a>
+                    </li>
+                    <li>
+                        <a href="">Discover</a>
+                    </li>
+                    <li>
+                        <a href="">Join openProcessing - sign in</a>
+                    </li>
+                    <li>
+                        <a href="">+Create a Sketch</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Teaching</h3>
+                <ul class="footer-links">
+                    <li>
+                        <a href="">Teaching with openProcessing</a>
+                    </li>
+                    <li>
+                        <a href="">View active classes</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">+Create a class</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">About</h3>
+                <ul class="footer-links">
+                    <li>
+                        <a href="">Credits</a>
+                    </li>
+                    <li>
+                        <a href="">Community guidelines</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of service - Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+            
+        </nav>
+    </footer>
+</body>
 </html>
