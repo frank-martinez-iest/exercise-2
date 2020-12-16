@@ -249,36 +249,40 @@
         <ul class="cards-wrapper">
           <!--4 Cards-->
           <li class="card info-card">
+            <div class="info-card__number">1</div>
             <img src="./assets/028-tomato.svg" alt="" />
             <p><strong>Pick meals</strong></p>
-            <hr class="info-card__hr" />
+            <hr class="hr--green" />
             <p class="info-card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               quis culpa facere inventore harum esse illum
             </p>
           </li>
           <li class="card info-card">
+            <div class="info-card__number">2</div>
             <img src="./assets/009-broccoli.svg" alt="" />
             <p><strong>Choose how often</strong></p>
-            <hr class="info-card__hr" />
+            <hr class="hr--green" />
             <p class="info-card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               quis culpa facere inventore harum esse illum
             </p>
           </li>
           <li class="card info-card">
+            <div class="info-card__number">3</div>
             <img src="./assets/001-apple.svg" alt="" />
             <p><strong>Fast deliveries</strong></p>
-            <hr class="info-card__hr" />
+            <hr class="hr--green" />
             <p class="info-card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               quis culpa facere inventore harum esse illum
             </p>
           </li>
           <li class="card info-card">
+            <div class="info-card__number">4</div>
             <img src="./assets/002-avocado.svg" alt="" />
             <p><strong>Tasty meals</strong></p>
-            <hr class="info-card__hr" />
+            <hr class="hr--green" />
             <p class="info-card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               quis culpa facere inventore harum esse illum
@@ -286,31 +290,107 @@
           </li>
         </ul>
       </section>
-      <section class="section-container">
+      <section class="section-container download-section">
         <!--Mobile Experience-->
+        <div class="download-section__left">
+          <h1>Better Experiences with Mobile App</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis,
+            voluptatem nam neque excepturi vitae dicta alias, cum voluptate
+            ipsam obcaecati. Labore dolore maxime sequi debitis cumque maiores
+            vero ullam?
+          </p>
+          <button class="btn">Download on the App Store</button>
+        </div>
+        <img src="./images/iphone.png" alt="" />
       </section>
-      <section class="section-container">
-        <h2>Get Free Coupon Now</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-          asperiores eligendi, esse eius sit odit
-        </p>
-        <form>
-          <input type="email" />
-          <input type="text" />
-          <button type="submit">Subscribe Now</button>
-        </form>
-        <video>Fresh video about our company</video>
+      <section class="section-container coupon-section">
+        <div class="coupon-section__wrapper">
+          <h1 class="wt">Get Free Coupon Now</h1>
+          <p class="wt">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+            asperiores eligendi, esse eius sit odit.Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Eos asperiores eligendi, esse eius sit
+            odit
+          </p>
+          <form class="coupon-section__form" action="POST">
+            <input
+              class="form-input"
+              placeholder="Your Email"
+              type="email"
+              name="email"
+            />
+            <input
+              class="form-input"
+              placeholder="Your Name"
+              type="text"
+              name="user"
+            />
+            <button class="btn btn--black" type="submit">Subscribe Now</button>
+          </form>
+        </div>
+      </section>
+      <section class="section-container video-section">
+        <video
+          class="video-section__content"
+          autoplay
+          loop
+          src="./videos/mifood_video.mp4"
+          frameborder="0"
+        >
+          MIFOOD video
+        </video>
       </section>
       <hr />
     </main>
+    <hr />
 
     <footer>
-      <ul>
-        <li>Company</li>
-        <li>Information</li>
-        <li>Information</li>
-        <li>Subscribe Now</li>
+      <ul class="footer-wrapper">
+        <li>
+          <p class="footer-title">Company</p>
+          <hr class="hr--green" />
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Driver Centre</a></li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-title">Information</p>
+          <hr class="hr--green" />
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-title">Information</p>
+          <hr class="hr--green" />
+          <ul>
+            <li><a href="#">Customer service</a></li>
+            <li><a href="#">Recommend a restaurant</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Signup a restaurant</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-title">Information</p>
+          <hr class="hr--green" />
+          <form>
+            <input class="form-input" type="text" placeholder="Your Email" />
+            <button class="btn" type="submit">Subscribe Now</button>
+          </form>
+        </li>
       </ul>
       <hr />
       <small>@CopyRight 2020. All Right Reserved</small>
