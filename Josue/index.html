@@ -23,6 +23,7 @@
     />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Place favicon.ico in the root directory -->
     <script
       src="https://kit.fontawesome.com/edbd3959ea.js"
@@ -35,17 +36,38 @@
   </head>
 
   <body>
-    <!--NAVBAR-->
+    <!--SIDEBAR-->
     <aside class="sidebar sidebar--closed">
-      <i onClick="closeSidebar()" class="menu-close fas fa-times"></i>
-      <a onClick="closeSidebar()" href="#">Foods</a>
-      <a onClick="closeSidebar()" href="#">Drinks</a>
-      <a onClick="closeSidebar()" href="#">Daily Menu</a>
-      <a onClick="closeSidebar()" href="#">Restaurants</a>
-      <a onClick="closeSidebar()" href="#">Stories</a>
-      <a onClick="closeSidebar()" href="#">Videos</a>
-      <a onClick="closeSidebar()" href="#">Contact</a>
+      <i onClick="closeSidebar()" class="fas fa-times sidebar__close-btn"></i>
+      <ul class="sidebar__items">
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item">Foods</a>
+        </li>
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item">Drinks</a>
+        </li>
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item"
+            >Daily Menu</a
+          >
+        </li>
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item"
+            >Restaurants</a
+          >
+        </li>
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item">Stories</a>
+        </li>
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item">Videos</a>
+        </li>
+        <li>
+          <a onClick="closeSidebar()" href="#" class="sidebar__item">Contact</a>
+        </li>
+      </ul>
     </aside>
+    <!--NAVBAR-->
     <nav class="navbar">
       <ul class="navbar__items">
         <li class="navbar__logo">
@@ -65,6 +87,7 @@
         <li class="navbar__link"><a href="#">Videos</a></li>
         <li class="navbar__link"><a href="#">Contact</a></li>
       </ul>
+      <!--EXTRA BUTTONS (IN THIS CASE ICON BUT SHOULD ACT LIKE BTNS)-->
       <i onClick="openSideBar()" class="menu-icon fas fa-bars"></i>
       <i class="fas fa-search"></i>
       <i class="far fa-user"></i>
@@ -257,13 +280,15 @@
           </li>
         </ul>
       </section>
+
+      <!-- HOW IT WORKS SECTION-->
       <section class="section-container info-section">
         <h2>How it works</h2>
         <ul class="cards-wrapper">
           <!--4 Cards-->
           <li class="card info-card">
             <div class="info-card__number">1</div>
-            <img src="./assets/028-tomato.svg" alt="" />
+            <img src="./assets/028-tomato.svg" alt="Fresh tomato svg" />
             <p><strong>Pick meals</strong></p>
             <hr class="hr--green" />
             <p class="info-card__description">
@@ -273,7 +298,7 @@
           </li>
           <li class="card info-card">
             <div class="info-card__number">2</div>
-            <img src="./assets/009-broccoli.svg" alt="" />
+            <img src="./assets/009-broccoli.svg" alt="Fresh broccoli svg" />
             <p><strong>Choose how often</strong></p>
             <hr class="hr--green" />
             <p class="info-card__description">
@@ -283,7 +308,7 @@
           </li>
           <li class="card info-card">
             <div class="info-card__number">3</div>
-            <img src="./assets/001-apple.svg" alt="" />
+            <img src="./assets/001-apple.svg" alt="Fresh apple svg" />
             <p><strong>Fast deliveries</strong></p>
             <hr class="hr--green" />
             <p class="info-card__description">
@@ -293,7 +318,7 @@
           </li>
           <li class="card info-card">
             <div class="info-card__number">4</div>
-            <img src="./assets/002-avocado.svg" alt="" />
+            <img src="./assets/002-avocado.svg" alt="Fresh avocado svg" />
             <p><strong>Tasty meals</strong></p>
             <hr class="hr--green" />
             <p class="info-card__description">
@@ -303,8 +328,9 @@
           </li>
         </ul>
       </section>
+
+      <!-- MOBILE EXPERIENCE SECTION -->
       <section class="section-container download-section">
-        <!--Mobile Experience-->
         <div class="download-section__left">
           <h1>Better Experiences with Mobile App</h1>
           <p>
@@ -315,12 +341,14 @@
           </p>
           <button class="btn">Download on the App Store</button>
         </div>
-        <img src="./images/iphone.png" alt="" />
+        <img src="./images/iphone.png" alt="iphone mockup" />
       </section>
+
+      <!-- COUPON SECTION -->
       <section class="section-container coupon-section">
         <div class="coupon-section__wrapper">
-          <h1 class="wt">Get Free Coupon Now</h1>
-          <p class="wt">
+          <h1 class="wh">Get Free Coupon Now</h1>
+          <p class="wh">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
             asperiores eligendi, esse eius sit odit.Lorem ipsum dolor, sit amet
             consectetur adipisicing elit. Eos asperiores eligendi, esse eius sit
@@ -343,13 +371,16 @@
           </form>
         </div>
       </section>
+
+      <!-- VIDEO SECTION -->
       <section class="section-container video-section">
         <video
           class="video-section__content"
-          autoplay="true"
-          loop="true"
           src="./videos/mifood_video.mp4"
-          frameborder="0"
+          playsinline
+          autoplay
+          muted
+          loop
         >
           MIFOOD video
         </video>
@@ -408,7 +439,7 @@
       <hr />
       <small>@CopyRight 2020. All Right Reserved</small>
     </footer>
-    <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+    <script src="js/vendor/modernizr-custom.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

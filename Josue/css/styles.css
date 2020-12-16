@@ -16,8 +16,8 @@ h1 {
   font-size: 48px;
 }
 p {
-  line-height: 1.5;
   color: gray;
+  line-height: 1.5;
 }
 a {
   cursor: pointer;
@@ -34,10 +34,9 @@ small {
 }
 hr {
   margin: 0;
-  margin: 0;
-  background: #e6e7e8;
   height: 1px;
   border: none;
+  background: #e6e7e8;
 }
 strong {
   color: black;
@@ -48,14 +47,14 @@ footer {
 /*UTILS*/
 .btn {
   width: fit-content;
+  padding: 16px 52px;
+  margin-top: 12px;
   border: none;
   border-radius: 54px;
   background-color: #57a772;
   color: white;
-  padding: 16px 52px;
-  font-size: 12px;
   font-weight: 500;
-  margin-top: 12px;
+  font-size: 12px;
   cursor: pointer;
 }
 .btn:hover {
@@ -63,16 +62,16 @@ footer {
   box-shadow: 1px 1px 10px 1px #57a772;
 }
 .section-container {
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
+  padding: 80px;
   margin-left: auto;
   margin-right: auto;
-  padding: 80px;
 }
 .icon {
   color: #949492;
 }
-.wt {
+.wh {
   color: white;
 }
 .btn--black {
@@ -89,29 +88,52 @@ footer {
 }
 /*SIDEBAR*/
 .sidebar {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
-  background-color: black;
+  position: fixed;
+  z-index: 999;
+  animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  width: 100%;
+  height: 100%;
+  background: #57a772;
   color: white;
 }
 .sidebar--closed {
   display: none;
 }
 .sidebar--open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar__close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+.sidebar__items {
   display: grid;
+  grid-template-rows: repeat(7, 60px);
+  text-align: center;
+}
+.sidebar__item {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
 }
 /*NAVBAR*/
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   width: 100%;
   padding: 0 80px;
-  border-bottom: 1px solid #e6e7e8;
+  box-sizing: border-box;
   box-shadow: 1px 2px 12px 0 #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
 }
 .navbar__logo {
   flex: 1;
@@ -163,15 +185,15 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  transition: all 400ms ease-in;
   overflow: hidden;
-  margin: 0;
-  border-radius: 8px;
-  position: relative;
+  transition: all 400ms ease-in;
   height: auto;
+  margin: 0;
   border: 1px solid #e6e7e8;
+  border-radius: 8px;
   background-color: white;
 }
 .card:hover {
@@ -197,15 +219,15 @@ footer {
   border-top: 1px solid #e6e7e8;
 }
 .card__carousel-images {
-  height: 100px;
   display: flex;
+  height: 100px;
   padding-left: 24px;
 }
 .card__carousel-image {
   height: 100%;
   width: 100px;
-  border-radius: 8px;
   margin-right: 8px;
+  border-radius: 8px;
 }
 .card__buttons > span,
 i {
@@ -232,17 +254,17 @@ i {
 }
 .info-card__number {
   position: absolute;
+  top: 32px;
+  left: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 32px;
-  top: 32px;
   width: 20px;
   height: 20px;
-  background-color: #57a772;
-  color: white;
   padding: 4px;
   border-radius: 100%;
+  background-color: #57a772;
+  color: white;
   font-size: 12px;
 }
 /* DOWNLOAD SECTION*/
@@ -259,14 +281,14 @@ i {
 /*COUPON SECTION*/
 .coupon-section {
   display: flex;
+  padding-bottom: 200px;
   justify-content: center;
+  border-radius: 0 0 300px 300px;
   background: url("../images/bg_food.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border-radius: 0 0 300px 300px;
   text-align: center;
-  padding-bottom: 200px;
 }
 .coupon-section__wrapper {
   width: 100%;
@@ -279,12 +301,12 @@ i {
   margin-bottom: 40px;
 }
 .form-input {
-  border-radius: 24px;
   padding: 16px 32px;
-  font-size: 12px;
-  font-weight: 500;
   margin-top: 12px;
   border: 1px solid #e6e7e8;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 500;
 }
 /*VIDEO SECTION*/
 .video-section {
@@ -333,8 +355,8 @@ i {
     padding: 40px;
   }
   .video-section__content {
-    margin-top: -100px;
     width: 100%;
+    margin-top: -100px;
   }
   .footer {
     padding: 40px;
