@@ -8,18 +8,18 @@
   justify-content: center;
   align-items: center;
 }
-.hero-text h1 {
+.hero-text__title {
   color: yellow;
   font-size: 64px;
   margin: 0;
 }
-.hero-text span {
+.hero-text__subtitle {
   color: blue;
   font-size: 32px;
   background-color: wheat;
   padding: 8px;
 }
-.hero-text button {
+.hero-text__button {
   display: block;
   margin: 64px 0 0 0;
 }
@@ -28,13 +28,13 @@
   .hero-container {
     height: 70vh;
   }
-  .hero-text h1 {
+  .hero-text__title {
     font-size: 40px;
   }
-  .hero-text span {
+  .hero-text__subtitle {
     font-size: 24px;
   }
-  .hero-text button {
+  .hero-text__button {
     margin: 32px 0 0 0;
     font-size: 24px;
   }
@@ -44,13 +44,13 @@
   .hero-container {
     height: 50vh;
   }
-  .hero-text h1 {
+  .hero-text__title {
     font-size: 32px;
   }
-  .hero-text span {
+  .hero-text__subtitle {
     font-size: 16px;
   }
-  .hero-text button {
+  .hero-text__button {
     margin: 16px 0 0 0;
     font-size: 16px;
   }
