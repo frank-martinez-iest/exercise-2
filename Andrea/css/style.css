@@ -486,4 +486,17 @@ label {
     font-size: 80px;
   }
 
+  .features-img {
+    width: 240px;
+    height: 200px;
+  }
+
+  .sketches-title {
+    font-size: 32px;
+  }
+  .sketches-artwork{
+    width: 240px;
+    height: 200px;
+  }
+
 }
