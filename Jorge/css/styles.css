@@ -1,0 +1,127 @@
+.top-nav {
+  display: flex;
+  padding: 16px 64px;
+}
+.top-nav__contact {
+  flex: 2;
+  display: flex;
+}
+.top-nav__phone {
+  flex: 1;
+}
+.top-nav__phone i {
+  padding-right: 8px;
+}
+.top-nav__email {
+  flex: 2;
+}
+.top-nav__email i {
+  padding-right: 8px;
+}
+.top-nav__social-icons {
+  flex: 1;
+  text-align: right;
+}
+.top-nav__social-icons i {
+  padding: 0 8px;
+}
+
+.bottom-nav {
+  display: flex;
+  background-color: blue;
+  padding: 16px 64px;
+}
+.bottom-nav__logo {
+  flex: 1;
+}
+.bottom-nav__logo img {
+  max-width: 100%;
+  height: auto;
+}
+.bottom-nav__menu {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottom-nav__menu ul{
+  display: flex;
+  list-style-type: none;
+}
+.bottom-nav__menu ul li {
+  padding: 0 16px;
+}
+.bottom-nav__menu ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.bottom-nav__bars {
+  display: none;
+}
+.horizontal-nav-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .top-nav {
+    padding: 8px;
+  }
+  .bottom-nav {
+    padding: 8px;
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+  .top-nav {
+    flex-direction: column;
+  }
+  .top-nav__contact {
+    flex-direction: column;
+  }
+  .top-nav__social-icons {
+    text-align: center;
+  }
+  .bottom-nav {
+    flex-direction: column;
+  }
+  .bottom-nav__logo img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .bottom-nav__bars {
+    display: block;
+    text-align: center;
+    padding: 8px;
+  }
+  .bottom-nav__bars span {
+    background-color: white;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .horizontal-nav-mobile {
+    display: none;
+    background-color: grey;
+    margin: 0 8px;
+  }
+  .horizontal-nav-mobile ul {
+    list-style-type: none;
+    margin: 0;
+  }
+  .horizontal-nav-mobile ul li {
+    display: block;
+    padding: 8px 16px;
+  }
+  .horizontal-nav-mobile ul li a {
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .horizontal-nav-mobile.visible{
+    display: block;
+  }
+} 

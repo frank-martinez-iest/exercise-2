@@ -18,6 +18,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -25,10 +28,63 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <nav>
+    <div class="top-nav">
+      <div class="top-nav__contact">
+        <div class="top-nav__phone">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          (123) 456-7890
+        </div>
+        <div class="top-nav__email">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          contacts@mail.com
+        </div>
+      </div>
+      <div class="top-nav__social-icons">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <div class="bottom-nav__logo">
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <div class="bottom-nav__menu hide">
+        <ul>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">CONTACTS</a></li>
+          <li><a href="#">ALL BLOCKS</a></li>
+        </ul>
+      </div>
+      <div class="bottom-nav__bars">
+        <span>
+          <i class="fa fa-bars" aria-hidden="true" id="mobile-menu"></i>
+        </span>
+      </div>
+    </div>
+    <div class="horizontal-nav-mobile" id="mobile-nav">
+      <ul>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACTS</a></li>
+        <li><a href="#">ALL BLOCKS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+
 
 </body>
 
