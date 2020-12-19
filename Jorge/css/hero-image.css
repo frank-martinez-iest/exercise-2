@@ -1,0 +1,57 @@
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/warriorsZ.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text__title {
+  color: yellow;
+  font-size: 64px;
+  margin: 0;
+}
+.hero-text__subtitle {
+  color: blue;
+  font-size: 32px;
+  background-color: wheat;
+  padding: 8px;
+}
+.hero-text__button {
+  display: block;
+  margin: 64px 0 0 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero-container {
+    height: 70vh;
+  }
+  .hero-text__title {
+    font-size: 40px;
+  }
+  .hero-text__subtitle {
+    font-size: 24px;
+  }
+  .hero-text__button {
+    margin: 32px 0 0 0;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    height: 50vh;
+  }
+  .hero-text__title {
+    font-size: 32px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+  }
+  .hero-text__button {
+    margin: 16px 0 0 0;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,22 @@
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: blue;
+  color: orange;
+}
+
+.button-big {
+  font-size: 32px;
+}
+
+.primary {
+  background-color: blue;
+  color: orange;
+}
+
+.primary:hover {
+  background-color: orange;
+  color: blue;
+}
