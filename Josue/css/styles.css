@@ -47,7 +47,7 @@ footer {
 /*UTILS*/
 .btn {
   width: fit-content;
-  padding: 16px 52px;
+  padding: 16px 48px;
   margin-top: 12px;
   border: none;
   border-radius: 54px;
@@ -61,7 +61,7 @@ footer {
   transition: all 400ms ease-out;
   box-shadow: 1px 1px 10px 1px #57a772;
 }
-.section-container {
+.container {
   box-sizing: border-box;
   width: 100%;
   padding: 80px;
@@ -72,7 +72,7 @@ footer {
   color: #949492;
   cursor: pointer;
 }
-.wh {
+.color-white {
   color: white;
 }
 .btn--black {
@@ -145,7 +145,7 @@ footer {
   width: 100%;
 }
 .navbar__link {
-  margin: 0 8px;
+  margin: 0 16px;
 }
 .navbar__logo-image {
   width: 100px;
@@ -241,10 +241,10 @@ i {
   flex: 1;
 }
 /* HOW IT WORKS SECTION*/
-.info-section {
+.container__info {
   background-color: #f0f1f0;
 }
-.info-section img {
+.container__info img {
   width: 100px;
 }
 .info-card {
@@ -272,18 +272,18 @@ i {
   font-size: 12px;
 }
 /* DOWNLOAD SECTION*/
-.download-section {
+.container__download {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.download-section__left {
+.container__download-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 32px;
 }
 /*COUPON SECTION*/
-.coupon-section {
+.container__coupon {
   display: flex;
   padding-bottom: 200px;
   justify-content: center;
@@ -294,15 +294,16 @@ i {
   background-size: cover;
   text-align: center;
 }
-.coupon-section__wrapper {
+.container__coupon-wrapper {
   width: 100%;
   max-width: 800px;
 }
-.coupon-section__form {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.container__coupon-form {
   gap: 24px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form-input {
   padding: 16px 32px;
@@ -313,11 +314,11 @@ i {
   font-weight: 500;
 }
 /*VIDEO SECTION*/
-.video-section {
+.container__video {
   display: flex;
   justify-content: center;
 }
-.video-section__content {
+.container__video-content {
   width: 80%;
   margin-top: -240px;
   border-radius: 12px;
@@ -348,17 +349,25 @@ i {
   .hero {
     grid-template-columns: 1fr;
   }
-  .download-section {
+  .container__download {
+    display: grid;
     grid-template-columns: 1fr;
+  }
+  .container__download-left {
+    align-items: center;
+    text-align: center;
   }
   .hero__description {
     padding: 0 40px;
     margin: 40px 0;
   }
-  .section-container {
+  .container {
     padding: 40px;
   }
-  .video-section__content {
+  .container__coupon-form {
+    flex-direction: column;
+  }
+  .container__video-content {
     width: 100%;
     margin-top: -100px;
   }

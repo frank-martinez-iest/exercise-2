@@ -39,7 +39,6 @@
     <!--SIDEBAR-->
     <aside class="sidebar sidebar--closed">
       <i
-        arialabel=""
         onClick="closeSidebar()"
         class="fas fa-times sidebar__close-btn"
         role="button"
@@ -127,7 +126,7 @@
     </header>
     <main>
       <!--DISH OF THE DAY SECTION-->
-      <section class="section-container" aria-labelledby="dishes">
+      <section class="container" aria-labelledby="dishes">
         <h2 id="dishes">Dish of the day</h2>
         <!--GRID CARDS WRAPPER-->
         <ul class="cards-wrapper">
@@ -297,7 +296,7 @@
       </section>
 
       <!-- HOW IT WORKS SECTION-->
-      <section class="section-container info-section">
+      <section class="container container__info">
         <h2>How it works</h2>
         <ul class="cards-wrapper">
           <!--4 Cards-->
@@ -345,8 +344,8 @@
       </section>
 
       <!-- MOBILE EXPERIENCE SECTION -->
-      <section class="section-container download-section">
-        <div class="download-section__left">
+      <section class="container container__download">
+        <div class="container__download-left">
           <h1>Better Experiences with Mobile App</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis,
@@ -356,20 +355,23 @@
           </p>
           <button class="btn">Download on the App Store</button>
         </div>
-        <img src="./images/iphone.png" alt="iphone mockup with mifood app" />
+        <img
+          src="./images/iphone-min.png"
+          alt="iphone mockup with mifood app"
+        />
       </section>
 
       <!-- COUPON SECTION -->
-      <section class="section-container coupon-section">
-        <div class="coupon-section__wrapper">
-          <h1 class="wh">Get Free Coupon Now</h1>
-          <p class="wh">
+      <section class="container container__coupon">
+        <div class="container__coupon-wrapper">
+          <h1 class="color-white">Get Free Coupon Now</h1>
+          <p class="color-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
             asperiores eligendi, esse eius sit odit.Lorem ipsum dolor, sit amet
             consectetur adipisicing elit. Eos asperiores eligendi, esse eius sit
             odit
           </p>
-          <form class="coupon-section__form" action="POST">
+          <form class="container__coupon-form" action="POST">
             <!-- LABEL OUGHT TO BE INCLUDED BUT DESIGNER DIDN'T CARE ABOUT ACCESSIBILITY-->
             <input
               class="form-input"
@@ -395,9 +397,9 @@
       </section>
 
       <!-- VIDEO SECTION -->
-      <section class="section-container video-section">
+      <section class="container container__video">
         <video
-          class="video-section__content"
+          class="container__video-content"
           src="./videos/mifood_video.mp4"
           playsinline
           autoplay
