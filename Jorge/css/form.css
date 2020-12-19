@@ -1,0 +1,57 @@
+.form-container {
+  display: flex;
+  height: 100vh;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+}
+.form-container__image {
+  flex: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/tournament.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 0 64px 64px;
+}
+.form-container__form {
+  flex: 1;
+  background-color: #ffff;
+  margin: 64px 64px 64px 0;
+  height: 80vh;
+}
+.form-title {
+  text-align: center;
+}
+
+.form-container__form .form {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form__general_info {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .form__general_info  > div:first-child {
+    padding-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container__image {
+    display: none;
+  }
+  .form-container__form {
+    margin: 64px;
+  }
+}
+

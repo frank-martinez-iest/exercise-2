@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/hero-image.css">
+  <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -81,6 +82,59 @@
       <h1 class="hero-text__title">Conoce a los guerreros del universo 7</h1>
       <span class="hero-text__subtitle">Observa sus mejores técnicas</span>
       <button class="primary button-big hero-text__button">Navegar</button>
+    </div>
+  </div>
+  <div class="form-container">
+    <div class="form-container__image">
+    </div>
+    <div class="form-container__form">
+      <h2 class="form-title">Compra tus boletos para el torneo del poder</h2>
+      <form class="form">
+        <fieldset>
+          <legend>Información personal</legend>
+          <div class="form__general_info">
+            <div>
+              <label for="fname">Primer nombre:</label><br>
+              <input type="text" id="fname" name="fname">
+            </div>
+            <div>
+              <label for="lname">Apellido:</label><br>
+              <input type="text" id="lname" name="lname">
+            </div>
+          </div>
+          <div class="form__general_info">
+            <div>
+              <label for="email">Correo electrónico:</label><br>
+              <input type="email" id="email" name="email">
+            </div>
+            <div>
+              <label for="phone">Telefono:</label><br>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Detalles del ticket</legend>
+          <div class="form__general_info">
+            <div>
+              <label for="ntickets">Numero de tickets:</label><br>
+              <input type="number" id="ntickets" name="ntickets">
+            </div>
+            <div>
+              <label for="dateshow">Fecha de reservacion:</label><br>
+              <input type="date" id="dateshow" name="dateshow">
+            </div>
+          </div>
+        </fieldset>
+        <div class="form__general_info">
+          <div>
+            <input type="reset" value="Limpiar">
+          </div>
+          <div>
+            <input type="submit" value="Comprar">
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 
