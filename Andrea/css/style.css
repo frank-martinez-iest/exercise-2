@@ -406,9 +406,11 @@ label {
 
 @media screen and (max-width: 1024px) {
   
-  .navbar-btn {
-    width: 144px;
-    padding: 16px 0;
+  li:first-child {
+    margin: 0;
+  }
+  .navbar-create {
+    display: none;
   }
 
   .navbar {
@@ -416,7 +418,8 @@ label {
   }
 
   .navbar-links {
-    justify-content: space-between;
+    margin: 0;
+    justify-content: space-evenly;
   }
 
   .navbar-title {
