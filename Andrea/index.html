@@ -45,7 +45,8 @@
                 </li>
                             
                 <li class="navbar-search">
-                    <input type="text" placeholder="Search">
+                    <label class="search-label" for="search">Search</label>
+                    <input type="text" id="search" placeholder="Search">
                 </li>
                 <li>
                     <a href="">Discover</a>
@@ -57,9 +58,10 @@
                     <a href="">Teach</a>
                 </li>
                 <li>
-                    <img class="navbar-img" id="user-btn" onclick="myFunction()" src="img/user.png" alt="user log in">
-                    <div class="navbar-user" id="user-login">
-                        <button class="user-btn" type="submit" onclick="location.href='form.html';" >Join openProcessing</button>
+                    <label for="navbar-toggle" ><img class="navbar-img" src="img/user.png" alt="user log in"></label>
+                    <input type="checkbox" id="navbar-toggle"/>
+                    <div id="navbar-user" id="user-login">
+                        <a class="user-join" href="form.html">Join openProcessing</a>
                         <hr>
                         <p>Already have an account?</p>
                         <a class="user-sign" href="">Sign in</a>
@@ -69,8 +71,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="navbar-btn">
-                    <button type="submit">Create a Sketch</button>
+                <li>
+                    <a class="navbar-create" href="">Create a Sketch</a>
                 </li>
     
             </ul>
@@ -80,37 +82,35 @@
             <div class="hero-content">
                 <h1 class="hero-title">Coding is <span class="indent">beautiful</span></h1>
                 <p class="hero-description">Join the community of creative coders, educators, and designers that explore, experiment, and play.</p>
-                <button type="submit" class="hero-btn btn-outline">join</button>
-                <button class="hero-btn">Sign in</button>
+                <a href="form.html" class="hero-join outline">join</a>
+                <a href="" class="hero-join">Sign in</a>
             </div>
         </section>
     </header>
     <main>
         <section class="features">
-            <!-- SHOW THIS-->
-            <div class="features-articles">
-                <img class="features-img" src="img/connect-img.png" alt="different processing artworks">
-                <h2 class="features-title">Connect and inspire</h2>
-                <p class="description">Join 100,000 creative coders and follow their work. Add your ideas with forks, and find your inspiration for your next coding challenge.</p>
-                <a class="features-link" href="">Explore sketches</a>
+            <div class="features__feature">
+                <img class="features__feature-img" src="img/connect-img.png" alt="different processing artworks">
+                <h2 class="features__feature-title">Connect and inspire</h2>
+                <p>Join 100,000 creative coders and follow their work. Add your ideas with forks, and find your inspiration for your next coding challenge.</p>
+                <a class="features__feature-link" href="">Explore sketches</a>
             </div>
-            <div class="features-articles">
-                <img class="features-img" src="img/coding-img.png" alt="code in processing environment">
-                <h2 class="features-title">No hassle coding</h2>
-                <p class="description">Code away your ideas in seconds with intuitive editor and p5js, enable common libraries with ease, and share your work with the community.</p>
-                <a class="features-link" href="">Create a sketch</a>
+            <div class="features__feature">
+                <img class="features__feature-img" src="img/coding-img.png" alt="code in processing environment">
+                <h2 class="features__feature-title">No hassle coding</h2>
+                <p>Code away your ideas in seconds with intuitive editor and p5js, enable common libraries with ease, and share your work with the community.</p>
+                <a class="features__feature-link" href="">Create a sketch</a>
             </div>
-            <div class="features-articles">
-                <img class="features-img" src="img/teach-img.png" alt="creative coding studio page image">
-                <h2 class="features-title" >Teach and learn</h2>
-                <p class="description">Teachers exclusive: Invite your students to study coding, give assignments and collect student work on your class page.</p>
-                <a class="features-link" href="">Learn more</a>
+            <div class="features__feature">
+                <img class="features__feature-img" src="img/teach-img.png" alt="creative coding studio page image">
+                <h2 class="features__feature-title" >Teach and learn</h2>
+                <p>Teachers exclusive: Invite your students to study coding, give assignments and collect student work on your class page.</p>
+                <a class="features__feature-link" href="">Learn more</a>
             </div>
-            <!-- Should I use a div here? -->
         </section>
         
         <section class="sketches">
-            <h2 class="sketches-title">Sketches that are <span><img class="heart-img" src="img/heart-arrow.png" alt="heart with arrow"> this week</span></h2>
+            <h2 class="sketches__title">Sketches that are <span><img class="heart-img" src="img/heart-arrow.png" alt="heart with arrow"> this week</span></h2>
             <div class="sketches-gallery">
                 <iframe class="sketches-artwork" src="https://www.openprocessing.org/sketch/748916/embed/" width="400" height="300"></iframe>
                 <iframe class="sketches-artwork" src="https://www.openprocessing.org/sketch/945135/embed/" width="400" height="300"></iframe>                
@@ -121,7 +121,7 @@
 
     <footer>
         <nav class="navbar-footer">
-            <div>
+            <section>
                 <h3 class="footer-title">Created with love in NYC</h3>
                 <ul class="footer-links">
                     <li>
@@ -132,9 +132,9 @@
                         <a href=""><i class="fab fa-twitter"></i>Follow @openprocessing</a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <h3 class="footer-title">Creative Coding</h3>
                 <ul class="footer-links">
                     <li>
@@ -150,9 +150,9 @@
                         <a href="">+Create a Sketch</a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <h3 class="footer-title">Teaching</h3>
                 <ul class="footer-links">
                     <li>
@@ -168,9 +168,9 @@
                         <a href="">+Create a class</a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <h3 class="footer-title">About</h3>
                 <ul class="footer-links">
                     <li>
@@ -187,7 +187,7 @@
                     </li>
 
                 </ul>
-            </div>
+            </section>
             
         </nav>
     </footer>

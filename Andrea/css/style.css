@@ -23,7 +23,6 @@ button {
   background-color: #F54949;
   color: white;
   margin-right: 0;
-  width: 100%;
   padding: 20px;
   border-radius: 0;
   border: none;
@@ -120,6 +119,14 @@ label {
   transition: transform 0.3s;  
 }
 
+.navbar-search {
+  margin: 0;
+}
+
+.search-label {
+  display: none;
+}
+
 .navbar-img:hover {
   transform: scale(1.2);
 }
@@ -131,6 +138,20 @@ label {
 
 }
 
+.navbar-create {
+  right: 0;
+  background-color: #F54949;
+  color: white;
+  margin-right: 0;
+  padding: 20px;
+  border-radius: 0;
+  border: none;
+}
+
+.navbar-create:hover {
+  background-color: #000;
+}
+
 .navbar-anchor {
   align-items: center;
   margin: 8px;
@@ -140,23 +161,32 @@ label {
 
 /* hidden div */
 
-.navbar-user {
+#navbar-toggle {
+  display: none;
+}
+
+#navbar-user {
   background-color: #333;
   width: 280px;
-  height: 200px;
+  height: 216px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #bbb;
   position: absolute;
   padding: 0 16px;
   top: 64px;
   right: 104px;
+  max-height: 0;
   z-index: 1;
-  display: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
 }
 
 
+#navbar-toggle:checked + #navbar-user {
+  max-height: 216px;
+}
 
-.user-btn {
+.user-join {
   background-color: #fff;
   border: 1px solid #F54949;
   color: #F54949;
@@ -167,6 +197,7 @@ label {
   padding: 0;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
 }
 
 .user-sign {
@@ -190,6 +221,10 @@ label {
   text-transform: capitalize;
   font-weight: lighter;
   margin: 64px 0;
+}
+
+.form-fields {
+  text-transform: capitalize;
 }
 
 .form-btn {
@@ -239,7 +274,7 @@ label {
   font-size: 16px;
 }
 
-.hero-btn {
+.hero-join{
   transition: all 200ms ease-in-out;
   background: none;
   color: #F54949;
@@ -249,9 +284,16 @@ label {
   height: 40px;
   text-transform: capitalize;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-outline {
+.hero-join:hover {
+  background-color: #F54949;
+}
+
+.outline {
   border: solid 1px #F54949;
 }
 
@@ -281,21 +323,21 @@ label {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.features-articles {
+.features__feature {
   line-height: 1.3;
   text-align: center;
 }
 
-.features-title {
+.features__feature-title {
   text-transform: capitalize;
   text-align: center;
 }
 
-.features-link {
+.features__feature-link {
   color: #F54949;
 }
 
-.features-img {
+.features__feature-img {
   width: 320px;
   height: 180px;
   margin: auto;
@@ -304,7 +346,7 @@ label {
   transition: transform .2s;
 }
 
-.features-img:hover{
+.features__feature-img:hover{
   transform: scale(1.2);
 }
 
@@ -317,7 +359,7 @@ label {
   margin: 0 32px;
 
 }
-.sketches-title {
+.sketches__title {
   display: inline;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
@@ -377,10 +419,6 @@ label {
     justify-content: space-between;
   }
 
-  .navbar-links li {
-    margin: 8px 0;
-  }
-
   .navbar-title {
     display: none;
   }
@@ -416,7 +454,7 @@ label {
     justify-content: flex-end;
   }
 
-  .hero-btn {
+  .hero-join {
     width: 240px;
     height: 48px; /* TAKE INTO ACCOUNT THE PADDING */
     margin: 32px auto 0px;
@@ -424,15 +462,16 @@ label {
     font-weight: bold;
   }
 
+
   .features {
     display: block;
   }
 
-  .features-articles {
+  .features__feature {
     margin-bottom: 80px;
   }
   
-  .features-img {
+  .features__feature-img {
     width: 440px;
     height: 312px;
   }
@@ -473,7 +512,7 @@ label {
 
 @media screen and (max-width: 500px) {
 
-  .navbar-search, .navbar-btn {
+  .navbar-search, .navbar-create {
     display: none;
   }
 
@@ -482,11 +521,15 @@ label {
     justify-content: space-around;
   }
 
+  #navbar-user {
+    right: 32px;
+  }
+
   .hero-title {
     font-size: 80px;
   }
 
-  .features-img {
+  .features__feature-img {
     width: 240px;
     height: 200px;
   }

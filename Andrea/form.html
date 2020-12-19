@@ -28,7 +28,9 @@
     
     <meta name="theme-color" content="#fafafa">
 </head>
- <header>
+
+<body>
+    <header>
         <nav class="navbar">
             <ul class="navbar-links">
                 <li>
@@ -46,26 +48,28 @@
                 <li>
                     <a href="">Teach</a>
                 </li>
-                <li class="navbar-btn">
-                    <button type="submit">Create a Sketch</button>
+                <li >
+                    <a class="navbar-create" href="">Create a Sketch</a>
                 </li>
-    
             </ul>
         </nav>
-<body>
-    <form class="sign-form" action="">
-        <h1 class="form-title">Join the creative coders on openProcessing</h1>
+    </header>
 
-        <label class="form-fields" for="">name</label>
-        <input type="text">
+    <main>
+        <form class="sign-form" action="">
+            <h1 class="form-title">Join the creative coders on openProcessing</h1>
 
-        <label class="form-fields" for="">email</label>
-        <input type="text" name="" id="">
+            <label class="form-fields" for="user-name">name</label>
+            <input type="text" id="user-name">
 
-        <label class="form-fields" for="">password</label>
-        <input type="password" name="" id="">
+            <label class="form-fields" for="user-email">email</label>
+            <input type="text" id="user-email">
 
-        <button class="form-btn">Join</button>
-    </form>
+            <label class="form-fields" for="user-password">password</label>
+            <input type="password" id="user-password">
+
+            <button type="submit" class="form-btn">Join</button>
+        </form>
+    </main>
 </body>
 </html>
